@@ -1,12 +1,11 @@
 # 发布前核验清单
 
-本地目录没有 Git 元数据时，不能据此声称 GitHub/Gitee 仓库已经存在。发布简历前，
-必须把下面的 `REPO_URL` 换成真实的公开项目仓库地址，并在干净网络环境逐项执行。
+当前项目仓库：<https://github.com/clmjan/RAG->。发布简历前，仍应在干净网络环境逐项执行下面的检查。
 
 ## 仓库与 README
 
 ```powershell
-$REPO_URL = "https://github.com/<owner>/<repo>"
+$REPO_URL = "https://github.com/clmjan/RAG-"
 git remote -v
 Invoke-WebRequest -Method Head -Uri $REPO_URL -MaximumRedirection 5
 Invoke-WebRequest -Method Head -Uri "$REPO_URL/blob/main/README.md" -MaximumRedirection 5

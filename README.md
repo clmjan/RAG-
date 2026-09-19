@@ -6,9 +6,11 @@
 
 ## 仓库核验
 
-简历中的链接必须指向**具体项目仓库**，而不是 GitHub/Gitee 个人主页。当前工作目录没有 `.git` 元数据，
-因此不能从本地证明远程仓库已经创建或公开；发布前请按 [RELEASE_CHECKLIST.md](RELEASE_CHECKLIST.md)
-核验仓库存在、默认分支可访问且 README 链接能打开。不要填写未经实际访问确认的 URL。
+项目仓库：[GitHub: clmjan/RAG-](https://github.com/clmjan/RAG-)
+
+简历中的链接必须指向**具体项目仓库**，而不是 GitHub/Gitee 个人主页。发布前请按
+[RELEASE_CHECKLIST.md](RELEASE_CHECKLIST.md) 核验仓库存在、默认分支可访问且 README 链接能打开。
+如果镜像到 Gitee，也应填写具体项目仓库地址，不要只填写个人主页。
 
 ## 系统架构
 
