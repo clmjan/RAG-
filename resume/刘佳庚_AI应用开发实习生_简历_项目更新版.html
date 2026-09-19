@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>刘佳庚 - AI应用开发实习生</title>
+  <style>
+    @page { size: A4; margin: 0; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: #eef2f4; }
+    body {
+      font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
+      color: #182a47;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .page {
+      width: 210mm;
+      height: 297mm;
+      margin: 0 auto;
+      padding: 13mm 14mm 9mm;
+      background: #fff;
+      overflow: hidden;
+    }
+    header {
+      display: grid;
+      grid-template-columns: 1.25fr .95fr;
+      align-items: center;
+      gap: 10mm;
+      padding-bottom: 5mm;
+      border-bottom: 1.4px solid #17314f;
+    }
+    h1 { margin: 0 0 1.8mm; font-size: 27pt; line-height: 1; letter-spacing: 0; }
+    .target { color: #078b8c; font-size: 12.5pt; font-weight: 700; line-height: 1.45; }
+    .contact { text-align: right; color: #5d7089; font-size: 9.3pt; line-height: 1.85; }
+    .contact b { color: #182a47; }
+    .contact a { color: inherit; text-decoration: none; }
+    .layout { display: grid; grid-template-columns: 57mm 1fr; gap: 8mm; padding-top: 4mm; }
+    aside {
+      background: #f0f5f7;
+      border-top: 1.6mm solid #0b9291;
+      padding: 5mm 4.5mm 4mm;
+      min-height: 231mm;
+    }
+    main { min-width: 0; }
+    section { margin-bottom: 5mm; }
+    aside section { margin-bottom: 5.4mm; }
+    h2 {
+      margin: 0 0 3mm;
+      padding-bottom: 1.8mm;
+      border-bottom: 1px solid #d5e0e6;
+      font-size: 14pt;
+      line-height: 1.1;
+    }
+    aside h2 { border: 0; margin-bottom: 2.4mm; padding: 0; font-size: 12.4pt; }
+    h2::after, aside h2::after {
+      content: "";
+      display: block;
+      width: 10mm;
+      height: .8mm;
+      margin-top: 1.6mm;
+      background: #079292;
+    }
+    .school { font-size: 10.4pt; font-weight: 700; margin-bottom: 1mm; }
+    .muted { color: #61738a; font-size: 9.2pt; line-height: 1.55; }
+    .skill { margin-bottom: 3mm; }
+    .skill b { display: block; margin-bottom: .8mm; font-size: 10pt; }
+    .skill p { margin: 0; color: #5d7089; font-size: 8.8pt; line-height: 1.55; }
+    .tags { display: flex; flex-wrap: wrap; gap: 1.5mm; }
+    .tag {
+      padding: 1.2mm 2mm;
+      border-radius: 1.2mm;
+      background: #e2f0ed;
+      color: #087d7b;
+      font-size: 8.4pt;
+    }
+    .availability { font-size: 9.2pt; line-height: 1.8; }
+    .project { margin-bottom: 5mm; }
+    .project-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 4mm;
+      margin-bottom: 1.5mm;
+    }
+    .project-title { font-size: 12.3pt; font-weight: 700; }
+    .project-meta { flex: none; color: #078b8c; font-size: 8.8pt; font-weight: 700; }
+    .summary { margin: 0 0 1.7mm; color: #5a6e87; font-size: 9pt; line-height: 1.55; }
+    ul { margin: 0; padding-left: 5mm; }
+    li { margin-bottom: 1.2mm; font-size: 9pt; line-height: 1.52; }
+    .stack { margin-top: 1.8mm; color: #078b8c; font-size: 8.7pt; line-height: 1.45; }
+    .stack b { color: #182a47; }
+    .evidence {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2mm;
+      margin: 2.5mm 0 3.2mm;
+    }
+    .metric { padding: 2.5mm; border: 1px solid #dbe5e9; background: #f8fafb; }
+    .metric strong { display: block; color: #078b8c; font-size: 15pt; line-height: 1; }
+    .metric span { color: #63758a; font-size: 7.8pt; }
+    .profile li { margin-bottom: 1.5mm; }
+    footer {
+      margin-top: 1mm;
+      padding-top: 2mm;
+      border-top: 1px solid #d8e1e6;
+      color: #8795a7;
+      font-size: 7.8pt;
+    }
+    @media print { html, body { background: #fff; } }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div>
+        <h1>刘佳庚</h1>
+        <div class="target">AI 应用开发实习生 · Python 后端实习生</div>
+      </div>
+      <div class="contact">
+        <div><b>电话</b> 18907936285　 <b>邮箱</b> 180131306@qq.com</div>
+        <div><b>所在地</b> 北京　 <b>预计毕业</b> 2028 年 6 月</div>
+        <div><b>项目仓库</b> 发布公开仓库后填写具体 URL</div>
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside>
+        <section>
+          <h2>教育背景</h2>
+          <div class="school">北京邮电大学</div>
+          <div class="muted">智能科学与技术 · 本科 · 大三</div>
+          <div class="muted">GPA：3.4 / 4.0</div>
+        </section>
+
+        <section>
+          <h2>技术能力</h2>
+          <div class="skill">
+            <b>Python / 后端</b>
+            <p>掌握 Python 基础、面向对象与异常处理；使用 FastAPI、Pydantic 开发并测试 HTTP API。</p>
+          </div>
+          <div class="skill">
+            <b>RAG / 信息检索</b>
+            <p>实践 BM25、TF-IDF、Embedding、Hybrid 检索，了解文档切分、引用校验、拒答与离线评测。</p>
+          </div>
+          <div class="skill">
+            <b>数据库</b>
+            <p>使用 SQLite、FTS5 与 SQL，能够完成数据建模、事务写入、索引及数据库迁移。</p>
+          </div>
+          <div class="skill">
+            <b>工程工具</b>
+            <p>使用 Git、Docker、pytest、GitHub Actions；具备 React 前端联调与 OpenAI-compatible API 接入经验。</p>
+          </div>
+        </section>
+
+        <section>
+          <h2>课程与语言</h2>
+          <div class="tags">
+            <span class="tag">数据结构</span><span class="tag">数据库</span>
+            <span class="tag">OOP</span><span class="tag">AI Foundation</span>
+            <span class="tag">CET-4</span><span class="tag">CET-6</span>
+          </div>
+        </section>
+
+        <section>
+          <h2>实习信息</h2>
+          <div class="availability">
+            北京 · 2026 年 9 月可到岗<br />
+            每周 3-4 天<br />
+            可连续实习 3 个月以上
+          </div>
+        </section>
+
+      </aside>
+
+      <main>
+        <section>
+          <h2>项目经历</h2>
+          <article class="project">
+            <div class="project-head">
+              <div class="project-title">课程资料 RAG 智能问答系统</div>
+              <div class="project-meta">个人项目 · 核心版本完成</div>
+            </div>
+            <p class="summary">面向课程笔记与学习资料，独立实现从文档上传、异步解析、结构化切分、索引检索到带引用问答和离线评测的完整 RAG 流程。</p>
+            <ul>
+              <li>基于 FastAPI + SQLite 设计持久化处理任务，支持文档状态查询、失败记录、服务重启恢复及原文、Chunk、FTS5 索引的事务化写入。</li>
+              <li>实现 BM25、TF-IDF、Embedding、Hybrid 四种统一检索策略，支持文档过滤、Top-K、最低分、命中高亮、向量缓存及 Provider 异常时 BM25 降级。</li>
+              <li>通过检索阈值、候选分差和词项覆盖率进行证据判断；抽取式与可选 LLM 回答均返回可追溯引用，并校验 chunk_id 与原文精确子串，证据不足时结构化拒答。</li>
+              <li>构建包含 64 道中英文、无答案、Hard Negative、多来源问题的 validation/test 评测集，统计 Recall@K、MRR、回答/拒答准确率、引用覆盖率及 P95 延迟，并支持参数消融实验。</li>
+              <li>完成 React 工作台、请求链路日志、Docker 一键部署及 GitHub Actions CI；补充 API、数据库迁移、检索、问答和可观测性测试，当前 52 项 pytest 测试全部通过。</li>
+            </ul>
+            <div class="stack"><b>技术栈：</b>Python · FastAPI · SQLite/FTS5 · scikit-learn · RAG · React · Docker · GitHub Actions</div>
+          </article>
+
+          <div class="evidence">
+            <div class="metric"><strong>4</strong><span>种统一检索策略</span></div>
+            <div class="metric"><strong>64</strong><span>道离线评测题</span></div>
+            <div class="metric"><strong>52</strong><span>项自动化测试通过</span></div>
+          </div>
+
+          <article class="project">
+            <div class="project-head">
+              <div class="project-title">智能全屋人脸与物体识别系统</div>
+              <div class="project-meta">小组课程项目 · 已完成</div>
+            </div>
+            <p class="summary">面向智能全屋场景，完成包含人脸识别、物体识别、数据管理与前端展示的视觉识别应用。</p>
+            <ul>
+              <li>负责 Python 人脸识别模块开发，并完成识别模块与后端数据库之间的连接和调用。</li>
+              <li>实现人脸及物体识别结果的数据存取与持久化，支持项目数据维护。</li>
+              <li>参与前端页面联调，打通视觉识别、数据库存储和网页展示流程。</li>
+            </ul>
+            <div class="stack"><b>技术栈：</b>Python · 计算机视觉 · 人脸识别 · 物体识别 · 数据库 · 前端页面</div>
+          </article>
+        </section>
+
+        <section class="profile">
+          <h2>个人概况</h2>
+          <ul>
+            <li>北京邮电大学智能科学与技术专业本科生，具备数据结构、数据库和面向对象程序设计基础。</li>
+            <li>聚焦 AI 应用与 Python 后端方向，能够围绕真实需求完成方案拆解、编码实现、测试验证和文档沉淀。</li>
+            <li>重视可验证结果与技术边界，能够通过评测数据、错误案例和日志定位检索及问答链路问题。</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+
+    <footer>刘佳庚 · AI 应用开发 / Python 后端 · 北京</footer>
+  </div>
+</body>
+</html>

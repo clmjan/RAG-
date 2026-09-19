@@ -1,0 +1,2 @@
+"""Course knowledge base application."""
+

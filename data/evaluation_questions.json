@@ -1,0 +1,70 @@
+{
+  "answerable": [
+    {"id":"q01","split":"validation","question":"RAG 的全称是什么？","source":["course_note.md"],"answer_terms":["Retrieval-Augmented Generation"]},
+    {"id":"q02","split":"validation","question":"RAG 的基本工作流程是什么？","source":["course_note.md"],"answer_terms":["检索","上下文"]},
+    {"id":"q03","split":"validation","question":"切分文本时为什么需要重叠？","source":["course_note.md"],"answer_terms":["关键信息","边界"]},
+    {"id":"q04","split":"validation","question":"TF-IDF 方法有什么特点？","source":["course_note.md"],"answer_terms":["简单","可解释"]},
+    {"id":"q05","split":"validation","question":"什么时候学习助理应该拒答？","source":["course_note.md"],"answer_terms":["低于阈值","没有找到依据"]},
+    {"id":"q06","split":"validation","question":"引用至少需要包含哪些信息？","source":["course_note.md"],"answer_terms":["文件名","片段序号","原文摘录"]},
+    {"id":"q07","split":"test","question":"向量化是做什么？","source":["course_note.md"],"answer_terms":["数字向量"]},
+    {"id":"q08","split":"test","question":"余弦相似度衡量什么？","source":["course_note.md"],"answer_terms":["接近程度"]},
+    {"id":"q09","split":"test","question":"FastAPI 在这个项目中负责什么？","source":["course_note.md"],"answer_terms":["文档上传","问答接口"]},
+    {"id":"q10","split":"test","question":"SQLite 适合什么阶段？","source":["course_note.md"],"answer_terms":["单机原型"]},
+    {"id":"q11","split":"test","question":"记录检索结果有助于区分哪两个阶段的错误？","source":["course_note.md"],"answer_terms":["检索阶段","生成阶段"]},
+    {"id":"q12","split":"test","question":"系统扩展时数据库可以迁移到哪里？","source":["course_note.md"],"answer_terms":["PostgreSQL"]},
+    {"id":"q13","split":"test","question":"RAG 中检索片段会交给谁？","source":["course_note.md"],"answer_terms":["生成模型"]},
+    {"id":"q14","split":"test","question":"阈值调参应该依靠什么数据？","source":["course_note.md"],"answer_terms":["验证集"]},
+    {"id":"q15","split":"test","question":"为什么要保存原文摘录？","source":["course_note.md"],"answer_terms":["核对"]},
+    {"id":"q16","split":"test","question":"错误案例应该记录哪些内容？","source":["course_note.md"],"answer_terms":["期望答案","实际答案"]},
+    {"id":"q17","split":"test","question":"生产系统可以使用什么向量方案？","source":["course_note.md"],"answer_terms":["embedding 模型","向量数据库"]},
+    {"id":"q18","split":"test","question":"PDF 文档首先需要做什么？","source":["course_note.md"],"answer_terms":["提取页面文字"]},
+    {"id":"q19","split":"test","question":"Markdown 文档可以保留什么结构？","source":["course_note.md"],"answer_terms":["标题","段落结构"]},
+    {"id":"q20","split":"test","question":"RAG 可以降低什么风险？","source":["course_note.md"],"answer_terms":["胡乱回答"]}
+    ,{"id":"q33","split":"test","question":"What are the six document processing steps?","source":["course_note.md"],"answer_terms":["loading","parsing","chunking"]}
+    ,{"id":"q34","split":"test","question":"Why should chunks overlap at boundaries?","source":["course_note.md"],"answer_terms":["boundary","overlap"]}
+    ,{"id":"q35","split":"test","question":"Which method is simple and interpretable?","source":["course_note.md"],"answer_terms":["TF-IDF","interpretable"]}
+    ,{"id":"q36","split":"test","question":"What does a vector database support in production?","source":["course_note.md"],"answer_terms":["vector database"]}
+    ,{"id":"q37","split":"test","question":"What information makes a citation traceable?","source":["course_note.md"],"answer_terms":["filename","original excerpt"]}
+    ,{"id":"q38","split":"test","question":"Which framework provides the upload and question APIs?","source":["course_note.md","api_note.md"],"answer_terms":["FastAPI"],"multi_source":true}
+    ,{"id":"q39","split":"test","question":"Which database is suitable for a standalone prototype?","source":["course_note.md","evaluation_note.md"],"answer_terms":["SQLite"]}
+    ,{"id":"q40","split":"test","question":"What should be fixed for a reproducible offline evaluation?","source":["evaluation_note.md","course_note.md"],"answer_terms":["dataset","parameters"],"multi_source":true,"cross_chapter":true}
+    ,{"id":"q41","split":"test","question":"评测中的 Recall@K 表示什么？","source":["course_note.md","evaluation_note.md"],"answer_terms":["相关资料","Top-K"],"multi_source":true}
+    ,{"id":"q42","split":"test","question":"为什么要记录错误案例？","source":["course_note.md","evaluation_note.md"],"answer_terms":["错误","改进"],"multi_source":true,"cross_chapter":true}
+    ,{"id":"q43","split":"test","question":"Markdown 文档保留哪些结构？","source":["course_note.md"],"answer_terms":["标题","段落"]}
+    ,{"id":"q44","split":"test","question":"Embedding 模型比较时要关注哪些因素？","source":["embedding_note.md"],"answer_terms":["维度","推理速度"]}
+    ,{"id":"q45","split":"test","question":"What is the purpose of API health checks?","source":["api_note.md"],"answer_terms":["health check"]}
+    ,{"id":"q46","split":"test","question":"What do unit tests focus on?","source":["testing_note.md"],"answer_terms":["function boundaries"]}
+    ,{"id":"q47","split":"test","question":"测试数据应该覆盖哪些情况？","source":["testing_note.md"],"answer_terms":["成功","失败"]}
+    ,{"id":"q48","split":"test","question":"向量检索为什么适合表达语义相似性？","source":["embedding_note.md","course_note.md"],"answer_terms":["语义相似性"],"multi_source":true}
+    ,{"id":"q49","split":"test","question":"What must be checked before choosing an embedding model?","source":["embedding_note.md"],"answer_terms":["evaluation"]}
+    ,{"id":"q50","split":"test","question":"跨文档评测为什么要固定分块参数？","source":["evaluation_note.md"],"answer_terms":["分块参数"]}
+    ,{"id":"q51","split":"test","question":"Why are retrieval results saved with an answer?","source":["course_note.md"],"answer_terms":["retrieval stage","generation stage"],"cross_chapter":true}
+    ,{"id":"q52","split":"test","question":"What can happen when retrieval quality is poor?","source":["course_note.md"],"answer_terms":["final answer"],"cross_chapter":true}
+  ],
+  "unanswerable": [
+    {"id":"q21","split":"validation","question":"这份 RAG 资料中 Agent 如何自主调用工具？","source":[],"should_refuse":true,"hard_negative":true},
+    {"id":"q22","split":"validation","question":"课程资料里的 SQLite 和 MySQL 性能对比是多少？","source":[],"should_refuse":true,"hard_negative":true},
+    {"id":"q23","split":"validation","question":"这份 Python 资料中的 Java 虚拟机如何调优？","source":[],"should_refuse":true,"hard_negative":true},
+    {"id":"q24","split":"validation","question":"量子纠缠的数学证明是什么？","source":[],"should_refuse":true},
+    {"id":"q25","split":"validation","question":"请给出牛顿第二定律的实验数据。","source":[],"should_refuse":true},
+    {"id":"q26","split":"test","question":"Agent 的规划循环和工具注册机制是什么？","source":[],"should_refuse":true,"hard_negative":true},
+    {"id":"q27","split":"test","question":"MySQL 的事务隔离级别有哪些？","source":[],"should_refuse":true,"hard_negative":true},
+    {"id":"q28","split":"test","question":"Java 的垃圾回收器如何配置？","source":[],"should_refuse":true,"hard_negative":true},
+    {"id":"q29","split":"test","question":"今天上海的天气怎么样？","source":[],"should_refuse":true},
+    {"id":"q30","split":"test","question":"请推导傅里叶变换的完整公式。","source":[],"should_refuse":true},
+    {"id":"q31","split":"test","question":"这份资料是否介绍了 Kubernetes 部署？","source":[],"should_refuse":true},
+    {"id":"q32","split":"test","question":"请比较 PostgreSQL 和 MongoDB 的写入吞吐量。","source":[],"should_refuse":true,"hard_negative":true}
+    ,{"id":"q53","split":"test","question":"What is the Kubernetes cluster size in these notes?","source":[],"should_refuse":true,"hard_negative":true}
+    ,{"id":"q54","split":"test","question":"How does Java's JIT compiler optimize this project?","source":[],"should_refuse":true,"hard_negative":true}
+    ,{"id":"q55","split":"test","question":"这份课程资料有没有介绍 Agent 工具调用协议？","source":[],"should_refuse":true,"hard_negative":true}
+    ,{"id":"q56","split":"test","question":"What is the exact latency benchmark for PostgreSQL?","source":[],"should_refuse":true,"hard_negative":true}
+    ,{"id":"q57","split":"test","question":"请给出上海今天的空气质量指数。","source":[],"should_refuse":true}
+    ,{"id":"q58","split":"test","question":"Explain the proof of Fermat's last theorem.","source":[],"should_refuse":true}
+    ,{"id":"q59","split":"test","question":"这份资料是否包含 Kubernetes YAML 示例？","source":[],"should_refuse":true,"hard_negative":true}
+    ,{"id":"q60","split":"test","question":"What is the stock price mentioned in the course notes?","source":[],"should_refuse":true}
+    ,{"id":"q61","split":"test","question":"请比较 MySQL 与 SQLite 的事务隔离性能。","source":[],"should_refuse":true,"hard_negative":true}
+    ,{"id":"q62","split":"test","question":"How many production users does this system serve?","source":[],"should_refuse":true}
+    ,{"id":"q63","split":"test","question":"课程资料中有没有 Transformer 的参数量？","source":[],"should_refuse":true,"hard_negative":true}
+    ,{"id":"q64","split":"test","question":"What is the weather forecast for tomorrow?","source":[],"should_refuse":true}
+  ]
+}
